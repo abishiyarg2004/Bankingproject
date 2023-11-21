@@ -1,0 +1,31 @@
+.tool{
+    padding: 20px;
+    background-color: darkblue;
+}
+.homediv,.logdiv,.signdiv{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.homebody{
+    width: 2100px;
+    height: 1000px;
+    background-image: url(https://www.gcreddy.com/wp-content/uploads/2022/07/Banking-Domain-Knowledge-for-IT-Professionals.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.bodyinlog{
+    height: 1000px;
+    width: 2100px;
+    background-image: url("https://t3.ftcdn.net/jpg/02/44/48/36/360_F_244483606_hRcppyIRwaoWVGxQRN6MMepTu3YmSSUz.jpg");
+    background-repeat: no-repeat;;
+   background-size:700px;
+}
+.footer{
+    margin-top: 730px;
+    background-color:darkblue;
+   
+}
