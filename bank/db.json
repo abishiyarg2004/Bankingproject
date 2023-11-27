@@ -1,0 +1,46 @@
+{
+  "transactions": [
+    {
+      "date": "2023-4-15",
+      "description": "Grocery shop",
+      "amount": "400",
+      "id": 1
+    },
+    {
+      "date": "2023-4-15",
+      "description": "7689065653",
+      "amount": "54",
+      "id": 2
+    },
+    {
+      "date": "2023-4-15",
+      "description": "Fees payment",
+      "amount": "6000",
+      "id": 3
+    },
+    {
+      "date": "2023-4-15",
+      "description": "1234567890",
+      "amount": "340",
+      "id": 4
+    },
+    {
+      "date": "2023-4-15",
+      "description": "657454353342",
+      "amount": "345",
+      "id": 5
+    },
+    {
+      "date": "2023-11-26",
+      "description": "6746534322",
+      "amount": "45",
+      "id": 6
+    },
+    {
+      "date": "2023-4-15",
+      "description": "7654321908",
+      "amount": "5000",
+      "id": 7
+    }
+  ]
+}

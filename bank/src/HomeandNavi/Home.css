@@ -1,6 +1,6 @@
 .tool{
     padding: 20px;
-    background-color: darkblue;
+    background-color: rgb(64, 64, 123);
 }
 .homediv,.logdiv,.signdiv{
     margin-top: 100px;
@@ -20,12 +20,45 @@
 .bodyinlog{
     height: 1000px;
     width: 2100px;
-    background-image: url("https://t3.ftcdn.net/jpg/02/44/48/36/360_F_244483606_hRcppyIRwaoWVGxQRN6MMepTu3YmSSUz.jpg");
+    background-image: url("https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/blog/mobile-banking/how-new-age-banking-is-transforming-the-banking-industry-717x404.jpg");
     background-repeat: no-repeat;;
-   background-size:700px;
+   background-size:cover;
+
 }
 .footer{
-    margin-top: 730px;
-    background-color:darkblue;
+    
+    background-color:rgb(68, 68, 135);
    
+}
+.Logincss{
+    font-style: italic;
+    font-weight: 300;
+}
+.Paperinlog{
+    background-image: url("https://t3.ftcdn.net/jpg/02/44/48/36/360_F_244483606_hRcppyIRwaoWVGxQRN6MMepTu3YmSSUz.jpg");
+    background-size: cover;
+    height:350px ;
+    width: 300px;
+}
+.Signupback{
+    height:380px ;
+    width: 300px;
+    margin-left: 130px;
+    padding-left: 20px;
+    padding-right: 20px;
+   padding-top: 5px;
+    background-color: white;
+}
+.transaction{
+    
+  background-image: url("https://img.freepik.com/free-vector/pay-by-smart-phone-wallet-transaction-sending-digital-money-money-transferring-digitally-from-one-mobile-phone-another-vector-flat-illustration_1150-58768.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699401600&semt=ais");
+ 
+  background-repeat: no-repeat;
+  background-size: 800px;
+  
+}
+.aboutusback{
+    background-image: url("https://dldmuionqjz51.cloudfront.net/wp-content/uploads/2021/12/banking-services-featured.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }

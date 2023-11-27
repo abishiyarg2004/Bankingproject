@@ -9,7 +9,9 @@ const Routing = () => {
   return (
       
     <div>
+      
         <Routes>
+          
             <Route path='/LoginSignup' element={<LoginSignup/>}/>
             <Route path='/Home' element={<Home/>}/>
            <Route path='/Aboutus' element={<Aboutus/>}/>

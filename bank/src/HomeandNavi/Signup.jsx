@@ -13,8 +13,8 @@ import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import { Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-
-
+import Paper from '@mui/material';
+import Home from './Home';
 
 const Signup = () => {
 
@@ -22,9 +22,37 @@ const Signup = () => {
   const [email,setEmail]=useState();
   const [pass,setPass]=useState();
   const navigation=useNavigate();
+  const [error,setError] = useState(false);
+
+ 
+  
  const handleclick=()=>
   {
+    
+  const hasUppercase = /[A-Z]/.test(pass);
+  const hasLowercase = /[a-z]/.test(pass);
+  const hasNumber = /\d/.test(pass);
+  const hasSpecialChar = /[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]/.test(pass);
+   
+  const isStrong =
+   
+    hasUppercase &&
+    hasLowercase &&
+    hasNumber &&
+    hasSpecialChar;
+
+   if(!isStrong){
+   
+    setError(true);
+   }
+  
+
+else{
+
     navigation('/Home')
+    alert("Sign up Successful")
+}
+
   }
   const [showPassword, setShowPassword] = React.useState(false);
 
@@ -33,8 +61,11 @@ const Signup = () => {
   const handleMouseDownPassword = (event: React.MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
   };
+
+
   return (
-    <div>
+<div className='Signupback'>    
+      <p style={{fontSize:"20px"}}>Sign Up</p>
       <p>
       <TextField id="standard-basic" label="Username" value={username}
       onChange={(event)=> setUsername(event.target.value)} variant="standard" />
@@ -63,6 +94,7 @@ const Signup = () => {
                   onMouseDown={handleMouseDownPassword}
                 >
                   {showPassword ? <VisibilityOff /> : <Visibility />}
+
                 </IconButton>
               </InputAdornment>
             }
@@ -70,12 +102,17 @@ const Signup = () => {
         </FormControl>
 
 
-           </p>
+            {
+              (error)? <p style={{color:"red"}}>*should contains a special character,number,uppercase</p> : ''
+            }
+            </p>
+
            <Button variant="contained"  onClick={handleclick}>Sign In</Button>
            <p>
        
 
            </p>
+          
     </div>
   )
 }

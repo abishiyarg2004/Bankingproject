@@ -9,7 +9,7 @@ import Login from './Login';
 import Signup from './Signup';
 import './Home.css'
 import Routing from './Routing';
-
+import Home from './Home';
 
 const LoginSignup = () => {
     
@@ -20,11 +20,11 @@ const LoginSignup = () => {
     }
   return (
 
-    <body className='bodyinlog'>
-    <div>
- <h1>Welcome to A3Banking Application!</h1>
-        <Paper elevation={8} style={{padding: "100px", width:"500px", marginLeft:"700px" , marginTop:"90px"}}>
- <h3>Login/SignUp to enjoy the features</h3>
+    
+    <div className='bodyinlog'>
+ <h1 style={{marginLeft:"1100px",paddingTop:"40px", color:"white"}}>Welcome to A3Banking Application!</h1>
+        <Paper elevation={8} className='Paperinlog' style={{padding: "60px", width:"600px",height:"500px", marginLeft:"1200px" , marginTop:"60px"}}>
+ <h2>Login/SignUp to enjoy the features</h2>
 
  {checked?(
 <Chip icon={<FaceIcon />} label="SignUp" color="primary" variant="outlined" />
@@ -52,7 +52,7 @@ inputProps={{ 'aria-label': 'controlled' }}
 </Paper>
      
     </div>
-    </body>
+    
   )
 }
 
